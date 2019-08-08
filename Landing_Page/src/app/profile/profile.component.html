@@ -1,0 +1,15 @@
+
+<section class="testimonials text-center bg-light">
+  <div class="container">
+    <h2 class="mb-5">What people are saying...</h2>
+    <div class="row">
+      <div class="col-lg-4" *ngFor="let profile of profiles">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" [src]="profile.foto">
+          <h5>{{profile.name}}</h5>
+          <p class="font-weight-light mb-0">{{profile.content}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
